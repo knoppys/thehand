@@ -11,10 +11,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 body {
     font-family: "Open Sans",sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab",serif;
     line-height: 1 !important;
+}
+.page-content ul {
+    margin: 0;
+    padding: 0;
+    padding-left:10px;
+}
+.page-content main li {
+    list-style: none;
+}
+.page-content main li::before {
+    content: "\f054";
+    display: inline-block;
+    font-family: FontAwesome;
+    padding-right: 9px;
+    top: 1px;
+    position: relative;
+    color: inherit;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+.gallery {
+    margin-bottom: -29px !important;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
     background: #fff none repeat scroll 0 0;
@@ -164,7 +190,7 @@ aside .page_item a:hover {
     padding-top: 60px;
 }
 .dropdown-menu {
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
     border: 0 none;
     border-radius: 0 !important;
 }
@@ -198,13 +224,13 @@ aside .page_item a:hover {
     padding: 12px;
 }
 .home-slide h1 {
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
     display: inline-block;
     font-weight: bold;
     width: auto;
 }
 .home-slide p {
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
     display: inline-block;
     font-size: 18px;
 }
@@ -452,8 +478,55 @@ main {
 aside {
     padding-right: 33px !important;
 }
+.titleborder {
+    width: 100px;
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    margin-top: 13px;
+    margin-bottom: -6px;
+}
+.pagetitle {
+    margin-bottom: 22px;
+}
+main header {
+    border: none;
+}
+section.address {
+    background: #420f16;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 25px;
+}
+.contactform {background: #d2d2d2;border-radius: 10px;padding:30px 0;}
 
+.contactform label {padding: 8%;}
+
+input.wpcf7-form-control, select.wpcf7-validates-as-required {
+    border-radius: 3px;
+    border: 1px solid #a2a2a2;
+    padding: 6px;
+    margin: 7px 0;
+    background: #fff;
+    max-width: 300px;
+    width: 100%;
+}
+div.wpcf7 img.ajax-loader {
+    border: none;
+    vertical-align: middle;
+    margin-left: -15px;
+}
+#page20 main ul {
+    padding-bottom: 20px !important;
+}
+#page20 main li {
+    float: left;
+    width: 33%;
+}
 @media all and (max-width: 500px) {
+    #page20 main li {
+        float: none;
+        width: 100%;
+    }
     .callout .btn {
         display: block;
         margin: 0;

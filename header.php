@@ -11,7 +11,7 @@
 
 <?php wp_head(); ?>
 </head>
-<body>
+<body id="<?php echo 'page'.get_the_id(); ?>">
 <header class="home-naviagtion" id="sticky"> 	
 		<nav class="navbar navbar-default">
 	  		<div class="container">   

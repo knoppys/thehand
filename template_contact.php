@@ -49,41 +49,30 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				</div>		
 		</section>
 
-
+		<section class="address">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<center>
+							<p>Church Street &bull; Chirk &bull; Wrexham &bull; LL14 5EY</p>
+							<p><a style="color:#fff!important" href="tel:01691773472"><i class="fa fa-phone"></i> 01691 773 472</a></p>
+							<p><a style="color:#fff!important" href="mailto:info@thehandhotelchirk.co.uk"><i class="fa fa-envelope"></i> info@thehandhotelchirk.co.uk</a></p>
+						</center>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="page-content contact-content">
 			<div class="container">
+				
 				<div class="row">
-					<main>
-						<div class="col-md-6 pull-left boxborder">
-						  <div class="pagetitle">
-						  	<h2>CONTACT US</h2>
-							<hr class="pull-left" style="width:73px; border: 1px solid #CCCCCC;">
-							<br /><br /><br />
-
-
-
-							<p> The Hand Hotel Chirk <br />
-								Church Street <br />
-								Chirk <br />
-								Wrexham <br />
-								LL14 5EY <br />
-							</p>							
-							<p> 
-								<span style="color:#BA7783;">T</span> 01691 773472 <br />
-								<span style="color:#BA7783;">E</span> info@thehandhotelchirk.co.uk
-							</p>
-						  		</div>
-						 	<?php echo do_shortcode( '[contact-form-7 id="168" title="Contact form 1"]' ); ?>
-					    </div>
-						<div class="col-md-6 pull-left border1">
-						  <div class="pagetitle ">
-							<h2>HOTEL BOOKING ENQUIRY</h2>
-							<hr style="width:73px; float:left; border: 1px solid #CCCCCC;">
-							<br />
-							<br />
-						  </div>
-						  <?php echo do_shortcode( '[contact-form-7 id="169" title="Booking Enquiry"]' ); ?>
-					    </div>
+					<main>						
+						<div class="col-md-12 pull-left boxborder">	
+						<?php get_template_part('template-parts/pageheader'); ?>					
+						<p><?php the_content(); ?></p>		
+						<div class="contactform">
+							<center><?php echo do_shortcode( '[contact-form-7 id="168" title="Contact form 1"]' ); ?></center>
+						</div>
 					</main>
 				</div>
 			</div>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Secondary
+Template Name: fullwidth
 */
 
 //get the header

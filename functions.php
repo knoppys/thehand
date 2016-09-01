@@ -66,16 +66,9 @@ register_nav_menus( array(
 	); 
 	register_sidebar( $args2 );
 
-
 /***************************
 * Custom Excerpt
 ****************************/
-function custom_excerpt_length( $length ) {
-	return 20;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-
 /**
  * Class Name: wp_bootstrap_navwalker
  * GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker

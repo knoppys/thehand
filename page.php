@@ -74,24 +74,15 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 								<center>								
 									<?php if (get_field('menu_link')) { ?>
 										<img height="auto" max-width="230px" src="<?php the_field('menu_image'); ?>" />
-										<a target="_blank" href="<?php the_field('menu_link'); ?>"class="btn btn-primary"><i class="fa fa-download"></i>  Download</a>
-									<?php } else {} ?>
-							 		
+										<a target="_blank" class="btn btn-primary" href="<?php the_field('menu_link'); ?>"><i class="fa fa-download"></i>  Download</a>
+									<?php } else {} ?>							 		
 								</center>	
 							</div>
 						</div>					
-					</aside>
+					</aside>					
 					<main class="col-sm-9" style="border-left: 1px solid #cccccc;">
-
-						<div class="pagetitle h2"> 
-						<h2><?php the_title(); ?></h2>
-						<hr style="width:10%; float:left; border: 1px solid #CCCCCC;">
-						<br />
-						</div>						
+						<?php get_template_part('template-parts/pageheader'); ?>
 						<?php the_content(); ?>
-						<br />
-						<br />
-
 					</main>
 				</div>
 			</div>

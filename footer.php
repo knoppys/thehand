@@ -103,9 +103,9 @@
 						</div>
 						<div class="col-sm-3">
 							<p class="footertext">Restaurant Hours</p>
-							<p> Our reception is open until 12:00pm 7 days a week.</p>
+							<p> Our reception is open until 12:00 am 7 days a week.</p>
 							<p class="footertext">Lunch Served</p>
-							<p><b>Monday-Friday:</b> 12noon to 2.30pm</p>
+							<p><b>Monday-Friday:</b> 12pm to 2.30pm</p>
 							<p class="footertext">Evening Meals Served</p>
 							<p><b>Monday-Friday:</b> 6pm to 7.30pm</p>
 						</div>
@@ -118,7 +118,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<p class="footernavtext">&#169; Copyright - The Hand Hotel Chirk</p>
-							<p style="color:#420f16; font-weight:bold;">Website by <a style="color:#420f16; font-weight:bold;" href="http://www.knoppys.co.uk" target="_blank" title="Web Design, Web DEvelopment and SEO in Wrexham">Knopys Digital Limited</a></p>
+							<p style="color:#420f16; font-weight:bold;">Website by <a style="color:#420f16; font-weight:bold;" href="http://www.knoppys.co.uk" target="_blank" title="Web Design, Web Development and SEO in Wrexham">Knopys Digital Limited</a></p>
 						</div>
 						<div class="col-md-6 pull-right">
 							<div class="bottomnav"><?php wp_nav_menu( array('menu'=>'footer') ); ?></div>			

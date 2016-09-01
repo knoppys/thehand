@@ -5,13 +5,12 @@
     jQuery(document).ready(function(){
        jQuery('#slider').slick({
 			autoplay: true,
-			autoplaySpeed: 3000,
+			autoplaySpeed: 9000,
 			pauseOnFocus: false,
 			pauseOnHover: false,
 			dots: false,
 			infinite: true,
 			fade: true,
-  cssEase: 'linear'
-
+  			cssEase: 'linear'
        });
     })
